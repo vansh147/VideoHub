@@ -1,0 +1,28 @@
+.mainDash{
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+.users, .uploads
+{
+  color: var(--text-color);
+  background-color: var(--black-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  /* border-bottom: 1px solid rgb(203, 203, 203); */
+  width: 20%;
+  aspect-ratio: 1/1;
+  padding: 12px;
+  gap: 0px;
+}
+.phpData
+{
+  font-size: 40px;
+}
+.dataName
+{
+  font-size: 30px;
+}

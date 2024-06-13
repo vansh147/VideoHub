@@ -1,0 +1,53 @@
+table {
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 20px;
+  width: calc(100% - 30px);
+  border-collapse: collapse;
+}
+
+th
+{
+  font-size: 25px;
+  border-bottom: 2px solid var(--text-color);
+  margin-bottom: 10px;
+}
+
+th, td 
+{
+  padding: 8px;
+  text-align: left; 
+  vertical-align: top;
+}
+
+.hidden {
+  display: none;
+}
+
+.edit, .delete
+{
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 10px;
+  color: var(--bg-color);
+  background-color: var(--text-color);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.title-column {
+  width: 20%; /* Adjust the width as needed */
+}
+
+.desc-column {
+  width: 40%; /* Adjust the width as needed */
+}
+
+.date-column {
+  width: 20%; /* Adjust the width as needed */
+}
+
+.edit-column, .del-column {
+  width: 10%; /* Adjust the width as needed */
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login & Registration Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cont">
+    <div class="form sign-in">
+      <h2>Log In</h2>
+      <br>
+      <form action="" id="loginForm">
+        <div class="label">
+          <label for="inputEmail4"><span>Email Address</span></label>
+          <input type="email" id="inputEmail4" name="mail">
+        </div>
+        <div class="label">
+          <label class="mb-1 mx-1" for="inputPassword4"><span>Password</span></label>
+          <input type="password" class="pass" id="inputPassword4" name="pass">
+          <input type="checkbox" onclick="togglePass()"> <span class="show">show password</span>
+        </div>
+        <input type="submit" id="login" class="submit button" value="Log In">
+        <!-- <button class="submit" id="login" type="button">Log In</button> -->
+      </form>
+      <script>
+        let pass = document.querySelector(".pass");
+        let togglePass = ()=>{
+          if(pass.type=="password")
+          {
+            pass.type="text";
+          }
+          else
+          {
+            pass.type="password";
+          }
+        }
+      </script>
+      <div class="message">
+
+      </div>
+    </div>
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+          <h1>New here?</h1>
+          <p>register and discover</p>
+        </div>
+        <div class="img-text m-in">
+          <h1>One of us?</h1>
+          <p>just log in</p>
+        </div>
+        <div class="img-btn">
+          <span class="m-up">Register</span>
+          <span class="m-in">Log In</span>
+        </div>
+      </div>
+      <div class="form sign-up">
+        <h2>Sign Up</h2>
+        <form action="" id="registerForm">
+          <div class="label reglab">
+            <label for="name"><span>Name</span></label>
+            <input type="text" id="name" name="name" class="reginp">
+            <sup id="nameErr">1</sup>
+          </div>
+          <div class="label reglab">
+            <label for="email"><span>Email</span></label>
+            <input type="text" id="email" name="email" class="reginp">
+            <sup id="mailErr">2</sup>
+          </div>
+          <div class="label reglab">
+            <label for="pass"><span>Password</span></label>
+            <input type="password" id="pass" name="pass" class="reginp">
+            <sup id="passErr">3</sup>
+          </div>
+          <div class="label reglab">
+            <label for="confirm"><span>Confirm Password</span></label>
+            <input type="password" id="confirm" name="confirmPass" class="reginp">
+            <sup  id="confirmErr">4</sup>
+          </div>
+          <input type="submit" class="button submit regbtn" value="Register">
+        </form>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="login.js"></script>
+<script type="text/javascript" src="register.js"></script>
+</body>
+</html>
